@@ -3,9 +3,18 @@ Write a function `twoDimensionalSum(arr)` that takes in a 2D array of numbers
 and returns the total sum of all numbers.
 */
 
-// Your code here
+let twoDimensionalSum = function (arr) {
+    let sum = 0;
 
-
+    for (let i = 0; i < arr.length; i++) {
+        let subArr = arr[i];
+        for (let j = 0; j < subArr.length; j++) {
+            let num = subArr[j];
+            sum += num;
+        }
+    }
+    return sum;
+};
 
 let arr1 = [
     [1, 3],
